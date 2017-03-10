@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+	{% for p in posts %}
+
+	{{ p.render() safe }}
+<br><br>
+
+{% end for %}
+
+{% end block %}
